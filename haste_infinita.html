@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Exercícios Clássicos de Física</title>
+
+    <!--Java Script-->
+    <script src="js/myscript.js"></script>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet"
+        type="text/css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/landing-page.min.css" rel="stylesheet">
+
+    <!-- Custom Font-->
+    <link rel="stylesheet" href="fonts/stylesheet.css" type="text/css" charset="utf-8" />
+
+    <!--- -->
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-light bg-light static-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Exercícios Clássicos de Física</a>
+         
+        </div>
+    </nav>
+
+    <div class="card bg-light">
+            <article class="card-body mx-auto" style="max-width: 400px;">
+                <h4 class="card-title mt-3 text-center">Haste no infinito </h4>
+                <p class="text-center">Insira as Informações:</p>
+    
+                <p class="text-center">Episilon = 8.85 * (10 ^ (- 12)) </p>
+                <p class="text-center">Unidade de Medida = (C^2) /(n * m^2) </p>
+    
+            
+    
+                <label for="carga">Den.Carga:</label>
+                <div class="form-group input-group">
+                    <input name="carga" id="carga" class="form-control" placeholder="(Q)" type="number">
+                </div> <!-- form-group// -->
+                <label for="exp_carga">exponencial da carga:</label>
+                <div class="form-group input-group">
+                    <input name="exp_carga" id="exp_carga" class="form-control" placeholder="exp" type="number">
+                </div> <!-- form-group// -->
+    
+                <div class="form-group">
+                    <label for="unidade_carga">Unidade de Medida:</label>
+                    <select multiple class="form-control" id="unidade_carga">
+                        <option>C/m</option>
+                        <option>C/cm</option>
+                        <option>C/mm</option>
+                    </select>
+                </div> <!-- form-group// -->
+    
+
+
+                <label for="comp_inicial">Comprimento Inicial:</label>
+                <div class="form-group input-group">
+                    <input name="comp_inicial" id="comp_inicial" class="form-control" placeholder="(A)" type="number">
+                </div> <!-- form-group// -->
+                <label for="exp_comp_inicial">exponencial do comprimento Inicial:</label>
+                <div class="form-group input-group">
+                    <input name="exp_comp_inicial" id="exp_comp_inicial" class="form-control" placeholder="exp" type="number">
+                </div> <!-- form-group// -->
+    
+                <div class="form-group">
+                    <label for="unidade_comp_inicial">Unidade de Medida:</label>
+                    <select multiple class="form-control" id="unidade_comp_inicial">
+                        <option>m</option>
+                        <option>cm</option>
+                        <option>mm</option>
+                    </select>
+                </div> <!-- form-group// -->
+                <p class="text-center">K = (9 * 10) ^9 </p>
+                <p class="text-center">Unidade de Medida = N * (m²/C²) </p>
+                <div class="form-group">
+                    <button class="btn btn-primary btn-block btn-dark" onclick="haste_fora_do_eixo()"> Resolver </button>
+                </div> <!-- form-group// -->
+
+                <div class="form-group">
+                        <label for="resolucao">resolucao</label>
+                        <textarea class="form-control" id="resolucao" rows="4" readonly></textarea>
+                    </div>
+            </article>
+        </div> <!-- card.// -->
+    
+    <!-- Card with Image-->
+    <div class="card" style="width: 20rem; margin: 0 auto; float: none; margin-bottom: 10px;">
+        <img class="card-img-top" src="img/hasteInfinita.png" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">Hastes no infinito</h5>
+            <p class="card-text" id="#">Resultado: </p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
+                    <ul class="list-inline mb-2">
+                        <li class="list-inline-item">
+                            <a href="#">About</a>
+                        </li>
+                        <li class="list-inline-item">&sdot;</li>
+                        <li class="list-inline-item">
+                            <a href="#">Contact</a>
+                        </li>
+                        <li class="list-inline-item">&sdot;</li>
+                        <li class="list-inline-item">
+                            <a href="#">Terms of Use</a>
+                        </li>
+                        <li class="list-inline-item">&sdot;</li>
+                        <li class="list-inline-item">
+                            <a href="#">Privacy Policy</a>
+                        </li>
+                    </ul>
+                    <p class="text-muted small mb-4 mb-lg-0">&copy; Your Website 2019. All Rights Reserved.</p>
+                </div>
+                <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item mr-3">
+                            <a href="#">
+                                <i class="fab fa-facebook fa-2x fa-fw"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item mr-3">
+                            <a href="#">
+                                <i class="fab fa-twitter-square fa-2x fa-fw"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <i class="fab fa-instagram fa-2x fa-fw"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+    
+</html>
